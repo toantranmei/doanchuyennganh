@@ -1,0 +1,22 @@
+@mixin navrow($device, $value) {
+    @media (min-width: $value + px) {
+        .nav__row__#{$device} {
+            -ms-flex-flow:row nowrap;
+            flex-flow:row nowrap;
+            -ms-flex-pack:start;
+            justify-content:flex-start;
+        }
+    }
+}
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@include navrow($smd, $sm);
+@include navrow($mdd, $md);
+@include navrow($lgd, $lg);
+@include navrow($xld, $xl);
+
