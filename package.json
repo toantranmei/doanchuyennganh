@@ -1,0 +1,25 @@
+{
+  "name": "doanchuyennganh",
+  "version": "1.0.0",
+  "description": "This is my project for haui",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trantoan960/doanchuyennganh.git"
+  },
+  "author": "sky albert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trantoan960/doanchuyennganh/issues"
+  },
+  "homepage": "https://github.com/trantoan960/doanchuyennganh#readme"
+}
