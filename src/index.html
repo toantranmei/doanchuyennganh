@@ -10,6 +10,8 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
     <title>Work For Manage - RHP Team</title>
+    <!-- Link CSS for icon Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Sky Albert CSS Library-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -40,11 +42,368 @@
         <!-- ============================================================== -->
         <header class="topbar">
             <nav class="nav nav__row__md nav__topbar">
-
+                <div class="nav__header">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a href="" class="nav__toogle d__md__none"></a>
+                    <!-- ============================================================== -->
+                    <!-- Start: Logo - style you can find in main.css -->
+                    <!-- ============================================================== -->
+                    <a class="nav__brand" href="index.html">
+                        <!-- Logo icon -->
+                        <b class="logo__icon">
+                            <!--You can put here icon as well -->
+                            <img src="images/logo-light-icon.png" alt="Logo icon homepage website" class="light__logo">
+                        </b>
+                        <!-- End Logo icon -->
+                        <!-- Logo text -->
+                        <span class="logo__text">
+                            <span>skyadmin</span>
+                        </span>
+                    </a>
+                    <!-- ============================================================== -->
+                    <!-- End: Logo 
+                    <!-- ============================================================== -->
+                </div>
+                <!-- ============================================================== -->
+                <!-- End: Logo Box -->
+                <!-- ============================================================== -->
+                <div class="nav__collapse collapse">
+                    <!-- ============================================================== -->
+                    <!-- Nav items left side bar -->
+                    <!-- ============================================================== -->
+                    <ul class="nav__box f__l m__r__auto">
+                        <li class="nav__item d__none d__md__block">
+                            <a href="" class="nav__link waves__effect">
+                                <i class="fas fa-bars ft__20"></i>
+                            </a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- Mega menu Gift -->
+                        <!-- ============================================================== -->
+                        <li class="nav__item dropdown mega__dropdown">
+                            <a href="" class="nav__link waves__effect">
+                                <i class="fas fa-gift ft__20"></i>
+                            </a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End: Mega menu Gift -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Notifications -->
+                        <!-- ============================================================== -->
+                        <li class="nav__item dropdown">
+                            <a href="" class="nav__link waves__effect">
+                                <i class="fas fa-bell ft__20"></i>
+                            </a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End: Notifications -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Messages -->
+                        <!-- ============================================================== -->
+                        <li class="nav__item dropdown">
+                            <a href="" class="nav__link waves__effect">
+                                <i class="fas fa-envelope ft__20"></i>
+                            </a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End: Messages -->
+                        <!-- ============================================================== -->
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Nav items right side bar -->
+                    <!-- ============================================================== -->
+                    <ul class="nav__box f__r">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav__item search__box">
+                            <a href="" class="nav__link waves__effect">
+                                <i class="fas fa-search ft__16"></i>
+                            </a>
+                            <form action="" class="app__search p__absolute" style="display: none;">
+                                <input type="text" class="form-control" placeholder="Search &amp; enter">
+                                <a class="srh-btn">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </form>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- Language -->
+                        <!-- ============================================================== -->
+                        <li class="nav__item dropdown show">
+                            <a href="" class="nav__link dropdown__toogle">
+                                <i class="svg__icon svg__icon__vi ft__18"></i>
+                            </a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav__item dropdown">
+                            <a href="" class="nav__link dropdown__toogle waves__effect">
+                                <img src="images/avatar/1.jpg" alt="User Image Avatar" class="circle" width="31">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <!-- ============================================================== -->
         <!-- End: Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss -->
+        <!-- ============================================================== -->
+        <aside class="left__sidebar">
+            <!-- Sidebar scroll -->
+            <div class="scroll scroll__sidebar">
+                <!-- Sidebar navigation -->
+                <nav class="nav__sidebar">
+                    <ul id="navsidebar" class="p__l__0">
+                        <!-- User profile -->
+                        <li>
+                            <div class="user__profile dropdown m__t__20">
+                                <div class="user__pic">
+                                    <img src="images/avatar/1.jpg" alt="users" class="circle img__fluid">
+                                </div>
+                                <div class="user__content hide__menu m__t__10">
+                                    <h5 class="m__b__10 user__name ft__m">Steave Jobs</h5>
+                                    <a href="javascript:void(0)" class="btn btn__circle btn__sm m__r__5" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-cog"></i>
+                                    </a>
+                                    <a href="javascript:void(0)" title="Logout" class="btn btn__circle btn__sm">
+                                        <i class="fas fa-power-off"></i>
+                                    </a>
+                                    <div class="dropdown__menu animated flipInY">
+                                        <a class="dropdown__item" href="javascript:void(0)">
+                                            <i class="fas fa-user m__r__5 m__l__5"></i> My Profile
+                                        </a>
+                                        <a class="dropdown__item" href="javascript:void(0)">
+                                            <i class="fas fa-cog m__r__5 m__l__5"></i> Account Settings
+                                        </a>
+                                        <a class="dropdown__item" href="javascript:void(0)">
+                                            <i class="fas fa-sign-out-alt m__r__5 m__l__5"></i> Logout
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- User profile -->
+                        <li class="nav__small__cap">
+                            <i class="fas fa-angle-double-right"></i>
+                            <span class="hide-menu">Personal</span>
+                        </li>
+                        <li class="sidebar__item selected">
+                            <a class="sidebar__link waves__effect" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-columns"></i>
+                                <span class="hide__menu">Dashboards </span>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link waves__effect" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-tasks"></i>
+                                <span class="hide__menu">Tasks </span>
+                            </a>
+                        </li>
+                        <li class="nav__small__cap">
+                            <i class="fas fa-angle-double-right"></i>
+                            <span class="hide-menu">Public</span>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link waves__effect" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-users"></i>
+                                <span class="hide__menu">Groups </span>
+                            </a>
+                            <a class="sidebar__link waves__effect" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-envelope"></i>
+                                <span class="hide__menu">Inbox </span>
+                            </a>
+                            <a class="sidebar__link waves__effect" href="javascript:void(0)" aria-expanded="false">
+                                <i class="fas fa-file"></i>
+                                <span class="hide__menu">Documents </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End: Sidebar navigation -->
+            </div>
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End: Left Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper -->
+        <!-- ============================================================== -->
+        <div class="page__wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb -->
+            <!-- ============================================================== -->
+            <div class="page__breadcrumb">
+                <div class="row">
+                    <div class="col__5 align__self__center">
+                        <h4 class="page__title">Dashboard</h4>
+                        <div class="d__flex align__items__center">
+                        </div>
+                    </div>
+                    <div class="col__7 align__self__center">
+                        <div class="d__flex no__block justify__content__end align__items__center">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb__item">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li class="breadcrumb__item active" aria-current="page">Library</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End: Bread crumb -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container Fluid -->
+            <!-- ============================================================== -->
+            <div class="container__fluid">
+                <!-- ============================================================== -->
+                <!-- Info box -->
+                <!-- ============================================================== -->
+                <div class="card__group">
+                    <!-- ============================================================== -->
+                    <!-- Card -->
+                    <!-- ============================================================== -->
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="d__flex align__items__center">
+                                <div class="m__r__10">
+                                    <span class="btn btn__circle btn__lg bg__danger">
+                                        <i class="fas fa-file text__white"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    New projects
+                                </div>
+                                <div class="m__l__auto">
+                                    <h2 class="m__b__0 ft__light">23</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End: Card -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Card -->
+                    <!-- ============================================================== -->
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="d__flex align__items__center">
+                                <div class="m__r__10">
+                                    <span class="btn btn__circle btn__lg btn__info">
+                                        <i class="fas fa-file text__white"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    New projects
+                                </div>
+                                <div class="m__l__auto">
+                                    <h2 class="m__b__0 ft__light">23</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End: Card -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Card -->
+                    <!-- ============================================================== -->
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="d__flex align__items__center">
+                                <div class="m__r__10">
+                                    <span class="btn btn__circle btn__lg bg__success">
+                                        <i class="fas fa-file text__white"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    New projects
+                                </div>
+                                <div class="m__l__auto">
+                                    <h2 class="m__b__0 ft__light">23</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End: Card -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Card -->
+                    <!-- ============================================================== -->
+                    <div class="card">
+                        <div class="card__body">
+                            <div class="d__flex align__items__center">
+                                <div class="m__r__10">
+                                    <span class="btn btn__circle btn__lg bg__warning">
+                                        <i class="fas fa-file text__white"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    New projects
+                                </div>
+                                <div class="m__l__auto">
+                                    <h2 class="m__b__0 ft__light">23</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End: Card -->
+                    <!-- ============================================================== -->
+                </div>
+                <!-- ============================================================== -->
+                <!-- End: Info box -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- More info -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col__sm__12">
+                        <div class="card">
+                            <div class="card__body">
+                                <div class="d__md__flex align__items__center">
+                                    <div>
+                                        <h4 class="card__title">Top Selling Products</h4>
+                                        <h5 class="card__subtitle">Overview of Top Selling Items</h5>
+                                    </div>
+                                    <div class="m__l__auto">
+                                        <div class="dl">
+                                            <select class="custom__select">
+                                                <option value="0" selected="">Monthly</option>
+                                                <option value="1">Daily</option>
+                                                <option value="2">Weekly</option>
+                                                <option value="3">Yearly</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End: More info -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End: Container Fuild -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End: Page wrapper -->
         <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->

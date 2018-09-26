@@ -1,0 +1,52 @@
+@mixin custom_distances($name, $pos) {
+    @for $i from 0 through 100 {
+        @if $i % 5 == 0 {
+            .#{$name}__#{$pos}__#{$i} {
+                @if $name == m {
+                    @if $pos == t {
+                        margin-top: $i + px;
+                    }
+                    @else if $pos == l {
+                        margin-left: $i + px;
+                    }
+                    @else if $pos == r {
+                        margin-right: $i + px;
+                    }
+                    @else if $pos == b {
+                        margin-bottom: $i + px;
+                    }
+                    @else if $pos == f {
+                        margin: $i + px;
+                    }
+                }
+                @else if $name == p {
+                    @if $pos == t {
+                        padding-top: $i + px;
+                    }
+                    @else if $pos == l {
+                        padding-left: $i + px;
+                    }
+                    @else if $pos == r {
+                        padding-right: $i + px;
+                    }
+                    @else if $pos == b {
+                        padding-bottom: $i + px;
+                    }
+                    @else if $pos == f {
+                        padding: $i + px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include custom_distances(m, t);
+@include custom_distances(m, r);
+@include custom_distances(m, l);
+@include custom_distances(m, b);
+@include custom_distances(m, f);
+@include custom_distances(p, t);
+@include custom_distances(p, r);
+@include custom_distances(p, l);
+@include custom_distances(p, b);
+@include custom_distances(p, f);

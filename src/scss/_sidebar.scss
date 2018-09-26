@@ -1,0 +1,118 @@
+.dropdown__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: .875rem;
+    color: #3e5569;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 2px;
+}
+
+.left__sidebar {
+    position: fixed;
+    background: #333d54;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    border-right: 1px solid rgba(0,0,0, .1);
+    z-index: 10;
+    padding-top: 64px;
+    transition: .2s ease-in;
+}
+
+.scroll {
+    touch-action: auto;
+    overflow: hidden!important;
+}
+
+.scroll__sidebar {
+    position: relative;
+    height: calc(100% - 20px);
+}
+
+.user__profile {
+    padding: 15px;
+    text-align: center;
+    .user__pic {
+        img {
+            width: 60px;
+        }
+    }
+    .user__content, .user__name {
+        color: #fff;
+        position: relative;
+        white-space: nowrap;
+    }
+    .btn__circle.btn__sm {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+        padding: 5px 0;
+        background: rgba(0,0,0,.2);
+        color: #fff;
+        opacity: .7;
+    }
+}
+
+.nav__sidebar {
+    ul {
+        .nav__small__cap {
+            font-size: 12px;
+            padding: 12px 15px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            line-height: 30px;
+            margin-top: 10px;
+            color: #fff;
+            opacity: .5;
+            text-transform: uppercase;
+            i {
+                line-height: 30px;
+                margin: 0 5px;
+            }
+        }
+        .sidebar__item {
+            .sidebar__link {
+                color: #fff;
+                padding: 12px 15px;
+                display: flex;
+                white-space: nowrap;
+                align-items: center;
+                line-height: 25px;
+                opacity: .6;
+                i {
+                    font-style: normal;
+                    width: 35px;
+                    line-height: 25px;
+                    font-size: 20px;
+                    color: #fff;
+                    display: inline-block;
+                    text-align: center;
+                }
+            }
+            .sidebar__link:hover {
+                opacity: 1;
+            }
+        }
+    }
+    >ul {
+        >li.selected {
+            padding: 0 0 0 10px;
+            >a {
+                border-radius: 60px 0 0 60px;
+                background: #4798e8;
+                color: #fff;
+                opacity: 1!important;
+            }
+        }
+    }
+}

@@ -5,6 +5,17 @@
             flex-flow:row nowrap;
             -ms-flex-pack:start;
             justify-content:flex-start;
+            .nav__collapse {
+                display: flex!important;
+                flex-basis: auto;
+            }
+            .nav__box {
+                flex-direction: row;
+            }
+        }
+
+        .d__#{$device}__block {
+            display: block!important;
         }
     }
 }
@@ -15,8 +26,24 @@
     justify-content: space-between;
 }
 
-@include navrow($smd, $sm);
-@include navrow($mdd, $md);
-@include navrow($lgd, $lg);
-@include navrow($xld, $xl);
+.nav__box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.nav__brand {
+    display: inline-block;
+    padding-top: .333594rem;
+    margin-bottom: .333594rem;
+    margin-right: 1rem;
+    font-size: 1.09375rem;
+    line-height: inherit;
+}
+
+@include navrow($sm, $vsm);
+@include navrow($md, $vmd);
+@include navrow($lg, $vlg);
+@include navrow($xl, $vxl);
 

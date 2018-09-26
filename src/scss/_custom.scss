@@ -1,3 +1,39 @@
+a, a:hover { text-decoration: none; }
+.h4, h4 { font-size: 18px; }
+.h5, h5 { font-size: 16px; }
+ul { list-style: none; }
+
+.m__r__auto { margin-right: auto!important; }
+.m__l__auto { margin-left: auto!important; }
+
+
+.f__l { float: left!important; }
+.f__r { float: right!important; }
+
+.ft__16 { font-size: 16px; }
+.ft__18 { font-size: 18px; }
+.ft__20 { font-size: 20px; }
+
+.ft__m {
+    font-weight: 500;
+}
+
+.text__white { color: #fff!important; }
+
+.svg__icon {
+    width: 1.333333333em;
+    height: 1em;
+    vertical-align: middle;
+    line-height: 1em;
+    background-size: contain;
+    position: relative;
+    display: inline-block;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.circle { border-radius: 50%!important; }
+
 #main__wrapper {
     width: 100%;
     overflow: hidden;
@@ -7,5 +43,78 @@
         height: 64px;
         z-index: 50;
         background-color: #fff;
+        .nav__header {
+            width: 250px;
+            position: fixed;
+            z-index: 10;
+            background: #333d54;
+            transition: .2s ease-in;
+            line-height: 64px;
+            border-right: 1px solid rgba(0,0,0, .1);
+            .nav__brand {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                text-align: center;
+                padding: 0 15px;
+                .logo__icon {
+                    margin-right: 5px;
+                }
+                .logo__text {
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+        }
+        .nav__collapse  {
+            margin-left: 250px;
+            background: #fff;
+            padding: 0 10px 0 0;
+            flex-grow: 1;
+            align-items: center;
+        }
+        
     }
+}
+
+.topbar {
+    .nav__box {
+        >.nav__item {
+            transition: .2s ease-in;
+            >.nav__link {
+                padding: 0 15px;
+                font-size: .875rem;
+                line-height: 64px;
+                height: 64px;
+            }
+        }
+        .nav__link {
+            color: rgba(0,0,0,.5);
+        }
+    }
+}
+
+.svg__icon__vi {
+    background-image: url(../images/languages/vietnam.svg);
+}
+
+.custom__select {
+    display: inline-block;
+    width: 100%;
+    height: calc(2.0625rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.5;
+    color: #4f5467;
+    vertical-align: middle;
+    background: url(../images/icons/custom-select.png) right .75rem center no-repeat #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 2px;
+    appearance: none;
+}
+
+.custom__select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    background-size: auto;
 }

@@ -1,0 +1,135 @@
+.align__self__center { align-self: center!important; }
+.align__items__center { align-items: center!important; }
+.justify__content__end { justify-content: flex-end!important; }
+.d__flex { display: flex!important; }
+.no-gutters{
+    margin-right:0;
+    margin-left:0
+}
+.no-gutters>.col,.no-gutters>[class*=col-]{
+    padding-right:0;
+    padding-left:0
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+@mixin colLoop {
+    $classLoop: '';
+    $class: '';
+    @for $i from 1 through 12 {
+        $class: col__#{$i};
+        $classLoop: $classLoop + ', .' + $class;
+    }               
+   
+    .col#{$classLoop} {
+        position:relative;
+        width:100%;
+        min-height:1px;
+        padding-right:10px;
+        padding-left:10px;
+    }
+}
+
+@include colLoop();
+
+.col{
+    flex-basis:0;
+    flex-grow:1;
+    max-width:100%
+}
+.col-auto{
+    flex:0 0 auto;
+    width:auto;
+    max-width:none
+}
+
+@for $i from 1 through 12 {
+    .col__#{$i} {
+        flex:0 0 $i*(100%/12);
+        max-width: $i*(100%/12);
+    }
+}
+
+.order-first{
+    order:-1
+}
+.order-last{
+    order:13
+}
+
+@for $i from 1 through 12 {
+    .order__#{$i} {
+        order: $i;
+    }
+}
+
+@for $i from 1 to 12 {
+    .offset__#{$i} {
+        margin-left: $i*(100%/12);
+    }
+}
+
+@mixin breakpoint($device, $value) {
+    @media (min-width: $value + px){
+        .d__#{$device}__flex {
+            display: flex!important;
+        }
+        .col__#{$device} {
+            flex-basis:0;
+            flex-grow:1;
+            max-width:100%;
+        }
+        .col__#{$device}__auto {
+            flex:0 0 auto;
+            width:auto;
+            max-width:none;
+        }
+        @for $i from 1 through 12 {
+            .col__#{$device}__#{$i} {
+                flex:0 0 $i*(100%/12);
+                max-width: $i*(100%/12);
+            }
+        }
+        @for $i from 1 through 12 {
+            .order__#{$device}__#{$i} {
+                order: $i;
+            }
+        }
+        @for $i from 1 to 12 {
+            .offset__#{$device}__#{$i} {
+                margin-left: $i*(100%/12);
+            }
+        }
+    }
+}
+@include breakpoint($sm, $vsm);
+@include breakpoint($md, $vmd);
+@include breakpoint($lg, $vlg);
+@include breakpoint($xl, $vxl);
+
+@mixin colLoopRes($device, $value) {
+    @media (min-width: $value + px) {
+        $classLoop: '';
+        $class: '';
+        @for $i from 1 through 12 {
+            $class: col__#{$device}__#{$i};
+            $classLoop: $classLoop + ', .' + $class;
+        }               
+    
+        .col#{$classLoop} {
+            position:relative;
+            width:100%;
+            min-height:1px;
+            padding-right:10px;
+            padding-left:10px;
+        }
+    }
+}
+@include colLoopRes($sm, $vsm);
+@include colLoopRes($md, $vmd);
+@include colLoopRes($lg, $vlg);
+@include colLoopRes($xl, $vxl);

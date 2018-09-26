@@ -1,0 +1,11 @@
+.waves__effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    user-select: none;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: all .1s ease-out;
+    vertical-align: middle;
+}
