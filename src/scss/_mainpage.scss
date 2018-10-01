@@ -61,3 +61,34 @@ ol li {
     text-rendering: auto;
     line-height: 1;
 }
+
+.modal__add__group {
+    -moz-user-select: none;
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    -ms-flex-line-pack: distribute;
+    -ms-flex-pack: center;
+    -ms-user-select: none;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-box-sizing: border-box;
+    -webkit-user-select: none;
+    align-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    contain: content;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    min-height: 340px;
+    opacity: 0;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    user-select: none;
+    width: 100%;
+    z-index: 1000;
+}

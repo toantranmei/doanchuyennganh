@@ -24,6 +24,10 @@ body{
     background-color:#fff
 }
 
+a, button, div, input, select, span, strong, textarea {
+    outline: 0;
+}
+
 /*
  * @Name: Css reset all browser;
  * @Author: Sky Albert;
