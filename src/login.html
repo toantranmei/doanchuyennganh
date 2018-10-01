@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <title>Work For Manage - RHP Team</title>
+    <!-- Link CSS for icon Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Sky Albert CSS Library-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- <link href="css/main.css" rel="stylesheet"> -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="main__wrapper">
+        <!-- ============================================================== -->
+        <!-- Preloader - style you can find in style.css -->
+        <!-- ============================================================== -->
+        <div class="preloader" style="display: none;">
+            <div class="lds__ripple">
+                <div class="lds__pos"></div>
+                <div class="lds__pos"></div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- Preloader - style you can find in style.css -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Login login.scss -->
+        <!-- ============================================================== -->
+        <div class="auth__wrapper d__flex no__block justify__content__center align__items__center" style="background:url(images/background/login-register.jpg) no-repeat center center;">
+            <div class="auth__box on__sidebar">
+                <div id="loginform">
+                    <div class="logo">
+                        <span class="db"><img src="images/icons/logo-icon.png" alt="logo"></span>
+                        <h5 class="ft__m m__b__20">Sign In to Admin</h5>
+                    </div>
+                    <!-- Form -->
+                    <div class="row">
+                        <div class="col__12">
+                            <form class="form__horizontal m__t__20" id="loginform" action="index.html">
+                                <div class="input__group m__b__3">
+                                    <div class="input__group__prepend">
+                                        <span class="input__group__text" id="basic__addon1"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form__control form__control__lg" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input__group m__b__3">
+                                    <div class="input__group__prepend">
+                                        <span class="input__group__text" id="basic-addon2"><i class="fas fa-pencil-alt"></i></span>
+                                    </div>
+                                    <input type="text" class="form__control form__control__lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="form__group row">
+                                    <div class="col__md__12">
+                                        <div class="custom__control custom__checkbox">
+                                            <input type="checkbox" class="custom__control__input" id="customCheck1">
+                                            <label class="custom__control__label" for="customCheck1">Remember me</label>
+                                            <a href="javascript:void(0)" id="changeStatus" class="text__dark f__r"><i class="fas fa-lock m__r__5"></i> Forgot pwd?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__group text__center">
+                                    <div class="col__xs__12 p__b__20">
+                                        <button class="btn btn__block btn__lg btn__info" type="submit">Log In</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col__xs__12 col__sm__12 col__md__12 m__t__10 text__center">
+                                        <div class="social">
+                                            <a href="javascript:void(0)" class="btn  btn__facebook" data-toggle="tooltip" title="" data-original-title="Login with Facebook"> <i aria-hidden="true" class="fab  fa-facebook"></i> </a>
+                                            <a href="javascript:void(0)" class="btn btn__googleplus" data-toggle="tooltip" title="" data-original-title="Login with Google"> <i aria-hidden="true" class="fab  fa-google-plus"></i> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__group m__b__0 m__t__10">
+                                    <div class="col__sm__12 text__center">
+                                        Don't have an account? <a href="register.html" class="text__info m__l__5"><b>Sign Up</b></a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="recoverform" style="display: none;">
+                    <div class="logo">
+                        <span class="db"><img src="images/icons/logo-icon.png" alt="logo"></span>
+                        <h5 class="ft__medium m__b__20">Recover Password</h5>
+                        <span>Enter your Email and instructions will be sent to you!</span>
+                    </div>
+                    <div class="row m__t__20">
+                        <!-- Form -->
+                        <form class="col__12" action="index.html">
+                            <!-- email -->
+                            <div class="form__group row">
+                                <div class="col__12">
+                                    <input class="form__control form__control__lg" type="email" required="" placeholder="Username">
+                                </div>
+                            </div>
+                            <!-- pwd -->
+                            <div class="row m__t__20">
+                                <div class="col__12">
+                                    <button class="btn btn__block btn__lg btn__danger m__b__10" type="submit" name="action">Reset</button>
+                                    <button id="closeForm" class="btn btn__block btn__lg btn__info" type="submit" name="action">Back</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- Login login.scss -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper scss in login.scss -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper scss in login.scss -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Right Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Right Sidebar -->
+        <!-- ============================================================== -->
+    </div>
+    <script>
+        var buttonChange = document.getElementById("changeStatus").addEventListener("click", changeStatus);
+        function changeStatus() {
+            var formLogin = document.getElementById("loginform");
+            var formReset = document.getElementById("recoverform");
+            formLogin.style.overflow = 'hidden';
+            formLogin.style.height = '0px';
+            formLogin.style.paddingTop = "0px";
+            formLogin.style.paddingBottom = "0px";
+            formLogin.style.marginBottom = "0px";
+            formReset.style.display = 'block';
+        };
+
+        var closeForm = document.getElementById("closeForm").addEventListener("click", changeCloseForm);
+        function changeCloseForm() {
+            var formLogin = document.getElementById("loginform");
+            var formReset = document.getElementById("recoverform");
+            formReset.style.display = 'none';
+            formLogin.style.overflow = 'none';
+            formLogin.style.height = 'auto';
+            formLogin.style.paddingTop = "auto";
+            formLogin.style.paddingBottom = "auto";
+            formLogin.style.marginBottom = "auto";
+        }
+
+    </script>
+</body>
+</html>

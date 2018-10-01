@@ -5,6 +5,10 @@ ul { list-style: none; }
 
 .m__r__auto { margin-right: auto!important; }
 .m__l__auto { margin-left: auto!important; }
+.m__b__3 { margin-bottom: 1rem!important; }
+
+.justify__content__center { justify-content: center!important; }
+.align-items-center { align-items: center!important; }
 
 
 .f__l { float: left!important; }
@@ -19,6 +23,9 @@ ul { list-style: none; }
 }
 
 .text__white { color: #fff!important; }
+.text__dark { color: #343a40!important; }  
+.text-info { color: #4798e8!important; } 
+.text__center { text-align: center!important; }
 
 .svg__icon {
     width: 1.333333333em;
@@ -33,6 +40,10 @@ ul { list-style: none; }
 }
 
 .circle { border-radius: 50%!important; }
+
+.badge, .btn, .dropdown__header, .dropdown__item, .input__group__text, .navbar__brand, .progress__bar {
+    white-space: nowrap;
+}
 
 #main__wrapper {
     width: 100%;

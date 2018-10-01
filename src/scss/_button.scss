@@ -3,10 +3,33 @@
 }
 .bg__warning { background-color: #ffbc34!important; }
 .bg__success { background-color: #22c6ab!important; }
+.btn__danger {
+    color: #fff;
+    background-color: #ef6e6e;
+    border-color: #ef6e6e;
+}
+.btn__danger:hover {
+    color: #fff;
+    background-color: #eb4c4c;
+    border-color: #ea4040;
+}
 .btn__info {
     color: #fff;
     background-color: #4798e8;
     border-color: #4798e8;
+}
+.btn__facebook {
+    color: #fff;
+    background-color: #3b5998;
+}
+.btn__googleplus {
+    color: #fff;
+    background-color: #dd4b39;
+}
+.btn__info:hover {
+    color: #fff;
+    background-color: #2585e4;
+    border-color: #1c7fe0;
 }
 .btn {
     display: inline-block;
@@ -20,6 +43,17 @@
     line-height: 1.5;
     border-radius: 2px;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn__block {
+    display: block;
+}
+
+.btn__lg {
+    padding: .5rem 1rem;
+    font-size: 1.09375rem;
+    line-height: 1.5;
+    border-radius: 2px;
 }
 
 .btn__sm {
